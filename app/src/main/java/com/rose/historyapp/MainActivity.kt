@@ -43,32 +43,31 @@ class MainActivity : AppCompatActivity() {
             // Create variables for historical figures selected for the project.
             val num = editText.text.toString().toIntOrNull()
             
-
-                    // If number is null, it should be set between 20 and 100.
-                    if (num != null && num in 20..100) {
-                        val specialNum = when (num) {
-                            47 -> "Revolutionary and Emperor\n, Napoleon Bonaparte"
-                            50 -> "King of rock and roll\n, Michael Jackson"
-                            36 -> "Actress, singer and model\n, Marilyn Monroe"
-                            37 -> "France's last reigning Queen\n, Marie Antoinette"
-                            48 -> "American Founding Father\n Alexander Hamilton"
-                            27 -> "Singer and songwriter\n, Amy Winehouse"
-                            25 -> "Rapper, songwriter and singer\n, Tupac"
-                            41 -> "The first King of the Zulu's,\nShaka Zulu"
-                            32 -> "Emperor and conqueror,\n Alexander the Great"
-                            35 -> "Composer of the Classical\n period, Wolfgang Mozart"
-                            else -> null
-                        }
-
-                        //message that will appear should the age not match up with any figures
-
-                        val message = if (specialNum != null) "$specialNum."
-                        else "No historical figure \n found for this age."
-                        resultTextView.text = message
-
-                    } else {
-                        resultTextView.text = "This age is out of range."
-                    }
+            // If number is null, it should be set between 20 and 100.
+            if (num != null && num in 20..100) {
+                val specialNum = when (num) {
+                    47 -> "Revolutionary and Emperor\n, Napoleon Bonaparte"
+                    50 -> "King of rock and roll\n, Michael Jackson"
+                    36 -> "Actress, singer and model\n, Marilyn Monroe"
+                    37 -> "France's last reigning Queen\n, Marie Antoinette"
+                    48 -> "American Founding Father\n Alexander Hamilton"
+                    27 -> "Singer and songwriter\n, Amy Winehouse"
+                    25 -> "Rapper, songwriter and singer\n, Tupac"
+                    41 -> "The first King of the Zulu's,\nShaka Zulu"
+                    32 -> "Emperor and conqueror,\n Alexander the Great"
+                    35 -> "Composer of the Classical\n period, Wolfgang Mozart"
+                    else -> null
                 }
+
+                //message that will appear should the age not match up with any figures
+
+                val message = if (specialNum != null) "$specialNum."
+                else "No historical figure \n found for this age."
+                resultTextView.text = message
+
+            } else {
+                resultTextView.text = "This age is out of range."
             }
         }
+    }
+}
