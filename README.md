@@ -11,7 +11,8 @@ The app layout consists of two buttons laid horizontally, with clear markings of
 The entire application is encamped on a single page. This prevents the possibility of a longer loading time when going from one page to another to access the application features. I find it works better when running my app on a single page rather than multiple as it saves time and the frustration of having errors that transcend ‘Main Activities’ and prevent the application from working altogether. Users who may not be accustomed to using educational apps and may be put off by any irregularities will find it effortless and convenient that everything is in one place.   
 
  
-Figure 1 Screenshot of History App 
+Figure 1 Screenshot of History App ![image](https://github.com/ST1046/HistoryApp2/assets/164020351/dd575474-f45e-44aa-8a9c-2b90c5930b5e)
+
 (Tesfagiorgis, 2024)
 
 The fonts of the app were carefully chosen to optimize the readability and visibility. Making sure to use a dark and bold font for the app, users are able to clearly discern the written instructions and information provided, without too much strain to the eyes. The font was tested on both low lighting and high lighting to ensure that the font remains legible regardless of the user's preferred lighting. The font was secondarily selected due to its aesthetic appeal, allowing the user to enjoy their experience on the app.
